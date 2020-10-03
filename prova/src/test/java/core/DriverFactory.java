@@ -1,7 +1,5 @@
 package core;
 
-import com.sun.org.apache.bcel.internal.generic.SWITCH;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -18,11 +16,12 @@ public class DriverFactory {
     private DriverFactory() { }
 
     public static WebDriver getDriver() {
-      //  System.setProperty("webdriver.chrome.driver", "C:/drivers_automacao/chromedriver.exe");
+
         if (driver == null) {
-            switch (browser){
+            switch (Propriedades.browser){
 
                 case  CHROME:  driver = new ChromeDriver();
+
                     break;
                 case  FIREFOX:  driver = new FirefoxDriver();
                     break;
@@ -32,9 +31,9 @@ public class DriverFactory {
         }
         return driver;
 
+
+
     }
-
-
 
 
     public static void killDriver() {

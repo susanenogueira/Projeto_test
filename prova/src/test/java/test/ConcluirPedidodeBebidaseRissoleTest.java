@@ -2,12 +2,10 @@ package test;
 
 
 import core.BaseTest;
-import org.junit.Before;
 import org.junit.Test;
 import page.ListaProdutosPage;
 import page.FinalizarPedidoPage;
 
-import static core.DriverFactory.getDriver;
 
 public class ConcluirPedidodeBebidaseRissoleTest extends BaseTest {
 
@@ -15,12 +13,7 @@ public class ConcluirPedidodeBebidaseRissoleTest extends BaseTest {
     FinalizarPedidoPage finalizarPedidoPage = new FinalizarPedidoPage();
 
 
-    @Before
-    public void inicializa() {
-        getDriver().get("https://shopcart-challenge.4all.com/");
 
-
-    }
 
     @Test
     public void testComprarBebidaseRissoles(){
