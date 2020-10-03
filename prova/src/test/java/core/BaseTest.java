@@ -1,6 +1,5 @@
 package core;
 
-import com.sun.jna.platform.FileUtils;
 import org.junit.After;
 import org.junit.Rule;
 import org.junit.rules.TestName;
@@ -11,7 +10,6 @@ import java.io.File;
 import java.io.IOException;
 
 import static com.sun.deploy.cache.Cache.copyFile;
-import static com.sun.jna.platform.FileUtils.*;
 import static core.DriverFactory.getDriver;
 import static core.DriverFactory.killDriver;
 

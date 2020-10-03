@@ -18,9 +18,9 @@ public class DriverFactory {
     private DriverFactory() { }
 
     public static WebDriver getDriver() {
-      //  System.setProperty("webdriver.chrome.driver", "C:/drivers_automacao/chromedriver.exe");
+
         if (driver == null) {
-            switch (browser){
+            switch (Propriedades.browser){
 
                 case  CHROME:  driver = new ChromeDriver();
                     break;
@@ -33,8 +33,6 @@ public class DriverFactory {
         return driver;
 
     }
-
-
 
 
     public static void killDriver() {

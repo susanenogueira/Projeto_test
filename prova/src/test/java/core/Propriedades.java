@@ -1,21 +1,17 @@
 package core;
 
 public class Propriedades {
-    public static boolean FECHAR_BROWSER = false;
-    public static Propriedades.Browsers browser;
+    public static boolean FECHAR_BROWSER = true;
 
-    static {
-        browser = Browsers.CHROME;
-    }
 
-    public Propriedades() {
-    }
+      public static Browsers browser = Browsers.CHROME;
 
-    public static enum Browsers {
+
+
+    public  enum Browsers {
         CHROME,
         FIREFOX;
 
-        private Browsers() {
-        }
+
     }
 }

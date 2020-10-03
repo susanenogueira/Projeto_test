@@ -3,12 +3,14 @@ import core.DriverFactory;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import test.ComprarDocesTest;
+import test.ConcluirPedidoDeDocesTest;
+import test.ConcluirPedidodeBebidaseRissoleTest;
 
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        ComprarDocesTest.class
+        ConcluirPedidoDeDocesTest.class,
+        ConcluirPedidodeBebidaseRissoleTest.class
 })
 
 public class SuiteTeste {
