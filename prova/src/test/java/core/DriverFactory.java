@@ -33,12 +33,9 @@ public class DriverFactory {
 
 
 
-<<<<<<< HEAD
     }
 
 
-=======
->>>>>>> main
     public static void killDriver() {
         if (driver != null) {
             driver.quit();
